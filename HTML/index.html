@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Nguyen Thanh Cong">
+        <meta name="description" content="learning HTML.">
+        <title>My First Web Page</title>
+        <link rel="icon" href="html.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <header>
+        <h1>Hello World!</h1>
+        
+        <nav aria-label="primary-navigation">
+            <!-- <h2 id="primary-navigation">Primary Navigation</h2> -->
+            <ul>
+                <li><a href="#html">Learning html</a></li>
+                <li><a href="#Emotions">my Emotions</a></li>
+                <li><a href="#Contact me">Contact me</a></li>
+            </ul>
+        </nav>
+        </header>
+        <hr>
+        <main>
+
+        <article id="html">
+            <h2>I'm ready to learn HTML</h2>
+            <p>This is my first web page</p>
+            <section>
+            <img src="html.png" alt="GAM" title="GAM con" width="225" height="225">
+            <figure>
+                <figcaption>An example of HTML code</figcaption>
+                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </figure>
+        </section>
+            <section>
+            <h3>My daily schedule</h3>
+            <p>i'm going to <em>tell you how</em>:</p>
+            <ol>
+                <li>...blabla.</li>
+                <li>...I will show you</li>
+                <li>...I learn <abbr title="programming"><a href="https://www.w3schools.com/html/">HTML</a></abbr>
+                <address>153 Nguyen Chi Thanh, Phuong 10 <br> Quan 5, Thanh Pho Ho Chi Minh</address></li>
+            </ol> 
+            <aside>
+                <details>
+                    <summary>ban co cau hoi nao <mark>khong</mark> ?</summary>
+                    <p>khong? <time datetime="08:00">8am</time> </p>
+                </details>
+            </aside> 
+            <table>
+                <caption>My daily time table</caption>
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Morning</td>
+                    <td><time timedate="08:00">8am</time>-<time timedate="11:00">11pm</time></td>
+                    <td>coding</td>
+                    
+                </tr>
+                <tr>
+                    <td scope="row">Break</td>
+                    <td><time timedate="11:00">11am</time>-<time timedate="12:00">12pm</time></td>
+                    <td>eat lunch</td>
+                    
+                </tr>
+                <tr>
+                    <td scope="row">Afternoon</td>
+                    <td><time timedate="12:00">12pm</time>-<time timedate="17:00">5pm</time></td>
+                    <td>Study for other courses</td>
+                    
+                </tr>
+                <tr>
+                    <td scope="row">Evening</td>
+                    <td rowspan="2">All other times</td>
+                    <td>Free time</td>
+                    
+                </tr>
+                <tr>
+                    <td scope="row">Night</td>
+                    <td>sleep</td>
+                    
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">this is my daily time table, i think that i should spend more time on coding because i weak of it</td>
+                </tr>
+            </tfoot>
+            </table>
+
+        </section>
+        </article>    
+        
+        <hr>
+        
+        <article id="Emotions">
+            <section>
+            <h2>I'm really tired</h2>
+            
+            <ul>
+                <li><p>I want to go to the beach.</p></li>
+                <li><p>But i don't have any money left</p>
+                <img src="html.png" alt="GAM" title="GAM" width="225" height="225" loading="lazy">
+            
+            </ul>
+            <!--Emotions: add more-->
+            <h3>I'm bored</h3>
+            <p>Why i have to do so many homework?</p>
+        </section>
+            <section>
+            <h3>Place i avoid</h3>
+            <dl>
+                <dt>North Pole</dt>
+                <dd>This is extremely <strong>cold</strong>!</dd>
+                <dt>South Pole</dt>
+                <dd>This is also cold</dd>
+                <dt>Top Mountain</dt>
+                <dd>This is also cold</dd>
+
+            </dl>
+        </section>
+        </article>
+        <hr>
+        <article id="Contact me">
+            <h2>Contact me</h2>
+            <p>I'd really like to hear from you!</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstname">firstname:</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="ten cua ban" autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="lastname">lastname:</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="ho cua ban" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">password:</label>
+                        <input type="password" name="password" id="password" placeholder="your password" required>
+                    </p>
+                    <p>
+                        <label for="phone">phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="your telephone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="decade">favorite decacde:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2023" step="10" value="1980">
+                    </p>
+                    
+                        
+                        <!-- <label for="coffee">Favorite Coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="Coffees">
+                                <option value="regular coffee">Regular Coffee</option>
+                                <option value="iced coffee">Iced Coffee</option>
+                            </optgroup>
+                            <optgroup label="Espresso Drinks">
+                                <option value="latte" selected>Latte</option>
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="cortado">Cortado</option>
+                                <option value="americano">Americano</option>
+                            </optgroup>
+                            <option value="other">Other</option> 
+                        </select>-->
+                    
+                    
+                            <p>
+                                <label for="coffee">Favorite Coffee:</label>
+                                <input type="text" name="coffee" id="coffee" list="coffee-list">
+                                <datalist id="coffee-list">
+                                    
+                                    <option value="coffee">
+                                    <option value="latte">
+                                    <option value="espresso">
+                                    <option value="cortado">
+                                    <option value="americano">
+                                    <option value="other">
+                                </datalist>
+                            </p>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>What is your favorite food?</legend>
+                            <p>
+                                <input type="radio" name="food" id="tacos" value="tacos">
+                                <label for="tacos">Tacos</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="food" id="pizza" value="pizza">
+                                <label for="pizza">Pizza</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="food" id="other" value="other">
+                                <label for="other">Other</label>
+                            </p>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Do you have pets?</legend>
+                            <p>
+                                <input type="checkbox" name="pets" id="dog" value="dog">
+                                <label for="dog">Dog</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="pets" id="cat" value="cat">
+                                <label for="cat">Cat</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="pets" id="fish" value="fish">
+                                <label for="fish">Fish</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="pets" id="otherpet" value="otherpet">
+                                <label for="otherpet">Other</label>
+                            </p>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Send me a Note</legend>
+                            <label for="message">Your Message:</label>
+                            <br>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message heare"></textarea>
+                        </fieldset>
+                        <br>
+                        <button type="submit">Submit</button>
+                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                        <button type="reset">Reset</button>
+
+                        
+
+
+                        
+
+                    
+                
+               
+            </form>
+            
+
+        </article>
+        </main>
+        <footer>
+        <hr>
+        <p>&lt;&lt;&lt; &copy; <a href="about.html">Nguyen Thanh Cong</a> &gt;&gt;&gt;</p>
+        <p><a href="#">Back to top</a></p>
+        </footer>
+    </body>
+</html>
