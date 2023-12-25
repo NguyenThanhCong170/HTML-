@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background: #fff;
+}
+
+.container .top{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 50px;
+    background-color: #EEF0E5;
+}
+
+.container .top .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    font-size: 15px;
+    color: #666464;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .top i{
+    font-size: 22px;
+    cursor: pointer;
+}
+.container .thongtin > *{
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr 1fr;
+    height: 400px;
+    width: 100%;
+    background-color: #eeebeb;
+    position:fixed;
+    top: 50px;
+    overflow: hidden;
+    z-index: 1;
+    padding: 50px 200px 0 170px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.671) 0px 8px 600px -8px;
+    display:none;
+    transition: all 0.3s ease;
+}
+
+.container .thongtin .thongtinbottom#b{
+    height: 550px;
+    display:none;
+}
+
+.container .thongtin .column1{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.container .thongtin .column2{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.container .thongtin .column3{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.container .thongtin h4{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.container .thongtin h1{
+    font-size: 35px;
+    color: #131212;
+    font-weight: 500;
+}
+.container .thongtin h2{
+    font-size: 18px;
+    color: #131212;
+    font-weight: 400;
+}
+.container .thongtin h3{
+    font-size: 16px;
+    color: #131212;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+.container .sanpham{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    gap:25px;
+    transition: all 0.3s ease;
+}
+.container .sanpham i{
+    font-size: 70px;
+}
+.container .sanpham .material-symbols-outlined{
+    font-size: 70px;
+}
+.container .sanpham .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .sanpham .info p{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #383636;
+    cursor: pointer;
+}
+.container .sanpham .info a{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(212, 51, 51);
+}
+
+.container .sanpham .info .line{
+    width: 12px;
+    height: 12px;
+}
+
+.container .sanpham .info p:hover{
+    color: rgb(101, 101, 196);
+}
+
+.container .line3{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 50px;
+    background-color: #EEF0E5;
+}
+
+.container .line3 p{
+    color: #666464;
+}
+
+.container .line3 a{
+    text-decoration: none;
+}
+.container .line3 a,
+.container .line3 i{
+    color: rgb(102, 102, 199);
+    cursor: pointer;
+}
+.container .line4{
+    position: relative;
+}
+.container .line4 img{
+    width: 100%;
+    object-fit: cover;
+}
+.container .line4 .info{
+    position: absolute;
+    top: 50px;
+    left: 32%;
+    right: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .line4 .info .dong1{
+    color: rgb(207, 105, 22);
+}
+.container .line4 .info .dong2{
+    color: #a09e9e;
+    cursor:default;
+    font-size: 25px;
+    font-weight: 500;
+}
+.container .line4 .info .dong3{
+    color: rgb(95, 94, 94);
+    cursor:default;
+    font-size: 45px;
+    font-weight: 700;
+}
+.container .line4 .info .dong4{
+    color: rgb(216, 214, 214);
+    font-size: 18px;
+    font-weight: 400;
+}
+.container .info .dong5{
+    width: 70px;
+    height: 40px;
+    background: rgb(4, 80, 143);
+    color: rgb(236, 234, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.container .info .dong5:hover{
+    background: rgb(27, 110, 179);
+}
+.container .line4 .info .dong6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .line4 .info .dong6 i{
+    cursor: pointer;
+}
+.container .line4 .info .dong6 a,
+.container .line4 .info .dong6 i{
+    font-size: 18px;
+    color:rgb(51, 149, 214);
+    text-decoration: none;
+}
+
+.container .line5 .info{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px
+}
+
+.container .line5 .info .dong1{
+    color: rgb(207, 105, 22);
+}
+
+.container .line5 .info .dong5{
+    width: 70px;
+    height: 40px;
+    background: rgb(4, 80, 143);
+    color: rgb(236, 234, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.container .line5 .info .dong5:hover{
+    background: rgb(27, 110, 179);
+}
+.container .line5 .info .dong6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .line5 .info .dong6 i{
+    cursor: pointer;
+}
+.container .line5 .info .dong6 a,
+.container .line5 .info .dong6 i{
+    font-size: 18px;
+    color:rgb(51, 149, 214);
+    text-decoration: none;
+}
+
+
+.container .info .dong2new{
+    color: #1f1e1e;
+    font-weight: 600;
+    font-size: 25px;
+}
+.container .info .dong3new{
+    color: #131212;
+    font-weight: 700;
+    font-size: 45px;
+}
+.container .info .dong4new{
+    color: #5f5f5f;
+    font-weight: 400;
+    font-size: 18px;
+}
+.container .line5 img{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 30px;
+}
+.container .line5 .linetrang{
+    height: 12px;
+    width: 100%;
+    background: rgb(218, 218, 218);
+    margin-top: 0;
+}
+
+.container .line6{
+    position: relative;
+}
+
+.container .line6 .info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 100px 0 0 100px;
+} 
+.container .line6 .info .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.container .line6 .info .dong6 a,
+.container .line6 .info .dong6 i{
+    font-size: 18px;
+    color:rgb(51, 149, 214);
+    text-decoration: none;
+}
+
+.container .line6 .info .logo{
+    font-size: 18px;
+}
+.container .line6 .info .dong2new,
+.container .line6 .info .dong3new{
+    font-size: 45px;
+    color: rgb(55, 55, 228);
+}
+.container .line6 img{
+    height: 500px;
+    margin-left: 600px;
+}
